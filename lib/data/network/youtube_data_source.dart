@@ -18,7 +18,7 @@ class YoutubeDataSource {
       {String query, String pageToken = ''}) async {
     final rawURL = _searchBaseURL +
         '&q=$query' +
-        (pageToken.isNotEmpty ? '&pageToken=pageToken' : '');
+        (pageToken.isNotEmpty ? '&pageToken=$pageToken' : '');
     final urlEncoded = Uri.encodeFull(rawURL);
 
     final response = await client.get(urlEncoded);
