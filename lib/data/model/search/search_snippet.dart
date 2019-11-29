@@ -1,10 +1,9 @@
 library search_snippet;
 
 import 'dart:convert';
-
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
-import 'package:youtube_search/data/model/search/thumbnails.dart';
+import 'package:youtube_search/data/model/common/thumbnails.dart';
 import 'package:youtube_search/data/model/serializer/serializers.dart';
 
 part 'search_snippet.g.dart';
